@@ -1,11 +1,31 @@
-// ##### (rootpath fix)
+//  ~~~~~~~~~~~~~~~~~~~~~~~~~~ (rootpath fix)  ~~~~~~~~~~~~~~~~~~~~~~~~~~
 // `$rootpath = "../..";` on local server, but must be `$rootpath = "./..";` on Github
 // *Solution*: use a global variable (`$rootpath = "../.." !global;`), overridden by a '_rootpathLocal.scss' file (with `$rootpath = "./..";`) that is then ignored during the 'push' process.
 
 $rootpath: "./.."; // overidden by _rootpathLocal.scss locally only, because file ignored in .gitignore
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~~~~~~~~~~~~~~~
+@font-face {
+  font-family: 'font-dancing-script';
+  src: url("/assets/fonts/DancingScript-VariableFont_wght.ttf");
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~
+$font1: 'font-dancing-script', cursive;
+
+$color-light: whitesmoke;
+$color-dark: #141819;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ General ~~~~~~~~~~~~~~~~~~~~~~~~~~
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  ::selection {
+    background-color: #4c4c4c;
+    color: $color-light;
+  }
 }

@@ -1,0 +1,11 @@
+// ##### (rootpath fix)
+// `$rootpath = "../..";` on local server, but must be `$rootpath = "./..";` on Github
+// *Solution*: use a global variable (`$rootpath = "../.." !global;`), overridden by a '_rootpathLocal.scss' file (with `$rootpath = "./..";`) that is then ignored during the 'push' process.
+
+$rootpath: "./.."; // overidden by _rootpathLocal.scss locally only, because file ignored in .gitignore
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

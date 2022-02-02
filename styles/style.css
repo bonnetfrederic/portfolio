@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .nav {
+  height: 50px;
+  width: 100%;
+  background: #4d4d4d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4d4d4d), color-stop(90%, #141819));
+  background: linear-gradient(180deg, #4d4d4d 0%, #141819 90%);
+  position: relative;
+}
+
+header .nav > .nav-header {
+  display: inline;
+}
+
+header .nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+header .nav > .nav-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  header .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+}
+
+header .nav > .nav-btn > label:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 500px) {
+  header .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+}
+
+header .nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  header .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+}
+
+header .nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+@media (max-width: 500px) {
+  header .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  header .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+header .nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  header .nav > #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 500px) {
+  header .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  header .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+#home {
+  min-height: calc(100vh - 50px);
+  overflow: hidden;
+  background: url(./../assets/img/main-bg.jpg) center/cover;
+}
+/*# sourceMappingURL=style.css.map */

@@ -9,6 +9,7 @@ header {
       rgba(20, 24, 25, 1) 90%
     );
     position: relative;
+    z-index: 1;
     & > .nav-header {
       display: inline;
       & > .nav-title {
@@ -21,7 +22,7 @@ header {
     }
     & > .nav-btn {
       display: none;
-      @media (max-width: 600px) {
+      @media (max-width: 500px) {
         display: inline-block;
         position: absolute;
         right: 0px;

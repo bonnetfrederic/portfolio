@@ -1,7 +1,9 @@
+const navCheck = document.querySelector("#nav-check");
+const navLinks = document.querySelectorAll(".nav-links");
+
 // closes the burger-menu panel when a link is clicked
-console.log(document.querySelectorAll(".nav-links"));
-document.querySelectorAll(".nav-links").forEach((lnk) => {
+navLinks.forEach((lnk) => {
   lnk.addEventListener('click', () => {
-    document.querySelector('#nav-check').checked = false;
+    navCheck.checked = false;
   })
 })

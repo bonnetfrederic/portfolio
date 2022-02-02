@@ -10,6 +10,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body ::-moz-selection {
   background-color: #4c4c4c;
   color: whitesmoke;
@@ -27,6 +31,7 @@ header .nav {
   background: -webkit-gradient(linear, left top, left bottom, from(#4d4d4d), color-stop(90%, #141819));
   background: linear-gradient(180deg, #4d4d4d 0%, #141819 90%);
   position: relative;
+  z-index: 1;
 }
 
 header .nav > .nav-header {
@@ -45,7 +50,7 @@ header .nav > .nav-btn {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   header .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -150,10 +155,14 @@ header .nav > #nav-check {
 #home #welcome {
   position: absolute;
   top: 200px;
-  left: 20vw;
+  left: -50vw;
+  -webkit-animation: slidingWelcome 3s ease-out forwards;
+          animation: slidingWelcome 3s ease-out forwards;
+  padding-right: 30px;
 }
 
-#home #welcome h1, #home #welcome p {
+#home #welcome h1,
+#home #welcome p {
   font-family: "font-dancing-script", cursive;
   color: whitesmoke;
 }
@@ -166,5 +175,93 @@ header .nav > #nav-check {
 #home #welcome p {
   font-size: 1.4rem;
   padding-left: 30px;
+}
+
+#home #section07 a {
+  padding-top: 80px;
+}
+
+#home #section07 a span {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+          animation: sdb07 2s infinite;
+  opacity: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#home #section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+#home #section07 a span:nth-of-type(2) {
+  bottom: 64px;
+  -webkit-animation-delay: 4.15s;
+          animation-delay: 4.15s;
+}
+
+#home #section07 a span:nth-of-type(3) {
+  bottom: 48px;
+  -webkit-animation-delay: 4.3s;
+          animation-delay: 4.3s;
+}
+
+@-webkit-keyframes slidingWelcome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 20vw;
+  }
+}
+
+@keyframes slidingWelcome {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    left: 20vw;
+  }
+}
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#about {
+  background: url(./../assets/img/gradienta-n2XqPm7Bqhk-unsplash.jpg) center/cover;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

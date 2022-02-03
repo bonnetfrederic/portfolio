@@ -29,7 +29,7 @@
       padding-top: 80px;
       span {
         position: absolute;
-        bottom: 80px;
+        bottom: 88px;
         left: 50%;
         width: 24px;
         height: 24px;
@@ -44,11 +44,11 @@
           animation-delay: 4s;
         }
         &:nth-of-type(2) {
-          bottom: 64px;
+          bottom: 72px;
           animation-delay: 4.15s;
         }
         &:nth-of-type(3) {
-          bottom: 48px;
+          bottom: 56px;
           animation-delay: 4.3s;
         }
       }

@@ -50,7 +50,7 @@ header .nav > .nav-btn {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -59,7 +59,7 @@ header .nav > .nav-btn {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > .nav-btn > label {
     display: inline-block;
     width: 50px;
@@ -72,7 +72,7 @@ header .nav > .nav-btn > label:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
@@ -87,7 +87,7 @@ header .nav > .nav-links {
   font-size: 18px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > .nav-links {
     position: absolute;
     display: block;
@@ -105,18 +105,19 @@ header .nav > .nav-links {
 header .nav > .nav-links > a {
   display: inline-block;
   padding: 13px 10px 13px 10px;
+  text-align: center;
   text-decoration: none;
-  color: #efefef;
+  color: whitesmoke;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > .nav-links > a {
     display: block;
     width: 100%;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > .nav-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -126,19 +127,19 @@ header .nav > #nav-check {
   display: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   header .nav > #nav-check:checked ~ .nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
@@ -184,7 +185,7 @@ header .nav > #nav-check {
 
 #home #section07 a span {
   position: absolute;
-  bottom: 80px;
+  bottom: 88px;
   left: 50%;
   width: 24px;
   height: 24px;
@@ -206,13 +207,13 @@ header .nav > #nav-check {
 }
 
 #home #section07 a span:nth-of-type(2) {
-  bottom: 64px;
+  bottom: 72px;
   -webkit-animation-delay: 4.15s;
           animation-delay: 4.15s;
 }
 
 #home #section07 a span:nth-of-type(3) {
-  bottom: 48px;
+  bottom: 56px;
   -webkit-animation-delay: 4.3s;
           animation-delay: 4.3s;
 }

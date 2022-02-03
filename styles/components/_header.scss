@@ -24,14 +24,14 @@ header {
     }
     & > .nav-btn {
       display: none;
-      @media (max-width: 500px) {
+      @media (max-width: 600px) {
         display: inline-block;
         position: absolute;
         right: 0px;
         top: 0px;
       }
       & > label {
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
           display: inline-block;
           width: 50px;
           height: 50px;
@@ -41,7 +41,7 @@ header {
           background-color: rgba(0, 0, 0, 0.3);
         }
         & > span {
-          @media (max-width: 500px) {
+          @media (max-width: 600px) {
             display: block;
             width: 25px;
             height: 10px;
@@ -54,7 +54,7 @@ header {
       display: inline;
       float: right;
       font-size: 18px;
-      @media (max-width: 500px) {
+      @media (max-width: 600px) {
         position: absolute;
         display: block;
         width: 100%;
@@ -68,14 +68,15 @@ header {
       & > a {
         display: inline-block;
         padding: 13px 10px 13px 10px;
+        text-align: center;
         text-decoration: none;
-        color: #efefef;
-        @media (max-width: 500px) {
+        color: $color-light;
+        @media (max-width: 600px) {
           display: block;
           width: 100%;
         }
         &:hover {
-          @media (max-width: 500px) {
+          @media (max-width: 600px) {
             background-color: rgba(0, 0, 0, 0.3);
           }
         }
@@ -84,17 +85,17 @@ header {
     & > #nav-check {
       display: none;
       &:checked ~ .nav-btn > label {
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
           background-color: rgba(0, 0, 0, 0.3);
         }
       }
       &:not(:checked) ~ .nav-links {
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
           height: 0px;
         }
       }
       &:checked ~ .nav-links {
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
           height: calc(100vh - 50px);
           overflow-y: auto;
         }

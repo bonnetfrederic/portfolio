@@ -14,6 +14,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "font-dancing-script", cursive;
+}
+
 body ::-moz-selection {
   background-color: #4c4c4c;
   color: whitesmoke;
@@ -22,6 +26,18 @@ body ::-moz-selection {
 body ::selection {
   background-color: #4c4c4c;
   color: whitesmoke;
+}
+
+body h1 {
+  font-size: 2rem;
+}
+
+body h2 {
+  font-size: 1.8rem;
+}
+
+body p {
+  font-size: 1.4rem;
 }
 
 header .nav {
@@ -84,7 +100,7 @@ header .nav > .nav-btn > label:hover {
 header .nav > .nav-links {
   display: inline;
   float: right;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
@@ -179,11 +195,11 @@ header .nav > #nav-check {
   padding-left: 30px;
 }
 
-#home #section07 a {
+#home #scroller01 a {
   padding-top: 80px;
 }
 
-#home #section07 a span {
+#home #scroller01 a span {
   position: absolute;
   bottom: 88px;
   left: 50%;
@@ -201,18 +217,18 @@ header .nav > #nav-check {
           box-sizing: border-box;
 }
 
-#home #section07 a span:nth-of-type(1) {
+#home #scroller01 a span:nth-of-type(1) {
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
 }
 
-#home #section07 a span:nth-of-type(2) {
+#home #scroller01 a span:nth-of-type(2) {
   bottom: 72px;
   -webkit-animation-delay: 4.15s;
           animation-delay: 4.15s;
 }
 
-#home #section07 a span:nth-of-type(3) {
+#home #scroller01 a span:nth-of-type(3) {
   bottom: 56px;
   -webkit-animation-delay: 4.3s;
           animation-delay: 4.3s;
@@ -264,6 +280,225 @@ header .nav > #nav-check {
 
 #about {
   background: url(./../assets/img/gradienta-n2XqPm7Bqhk-unsplash.jpg) center/cover;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  #about {
+    height: 1200px;
+  }
+}
+
+#about #polygonsContainer {
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  width: 90%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 800px) {
+  #about #polygonsContainer {
+    top: 5%;
+  }
+}
+
+#about #polygonsContainer #polygon01 {
+  background: rgba(245, 245, 245, 0.096);
+  border-radius: 36% 13% 27% 22% / 30% 14% 39% 26%;
+  min-width: 350px;
+  width: 40%;
+  max-width: 550px;
+  min-height: 350px;
+  height: 500px;
+  max-height: 800px;
+}
+
+@media screen and (max-width: 800px) {
+  #about #polygonsContainer #polygon01 {
+    margin: 20px;
+  }
+}
+
+#about #polygonsContainer #polygon01 #aboutMe {
+  color: whitesmoke;
+  font-family: "font-dancing-script", cursive;
+}
+
+#about #polygonsContainer #polygon01 #aboutMe h2 {
+  margin: 20px 0 30px;
+  padding-left: 30%;
+}
+
+#about #polygonsContainer #polygon01 #aboutMe article p {
+  padding: 0 5% 0 12%;
+}
+
+#about #polygonsContainer #polygon01 #aboutMe article p i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  color: whitesmoke;
+}
+
+#about #polygonsContainer #polygon01 #aboutMe article p i:hover {
+  cursor: pointer;
+}
+
+#about #polygonsContainer #polygon02 {
+  background: rgba(245, 245, 245, 0.096);
+  border-radius: 36% 13% 27% 22% / 30% 14% 39% 26%;
+  min-width: 350px;
+  width: 40%;
+  max-width: 550px;
+  min-height: 350px;
+  height: 500px;
+  max-height: 800px;
+}
+
+@media screen and (max-width: 800px) {
+  #about #polygonsContainer #polygon02 {
+    margin: 20px;
+  }
+}
+
+#about #polygonsContainer #polygon02 #skills {
+  width: 90%;
+  margin: auto;
+  color: whitesmoke;
+  font-family: "font-dancing-script", cursive;
+}
+
+#about #polygonsContainer #polygon02 #skills h2 {
+  margin: 20px 0 30px;
+  padding-left: 20%;
+}
+
+#about #polygonsContainer #polygon02 #skills #skillsLegend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  font-size: 1rem;
+  margin: 0 auto 20px;
+}
+
+#about #polygonsContainer #polygon02 #skills h6 {
+  font-size: 0.8rem;
+}
+
+#about #polygonsContainer #polygon02 .col {
+  width: 90%;
+  margin: auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0%;
+          flex: 1 0 0%;
+}
+
+#about #polygonsContainer #polygon02 .progressBarsContainer {
+  margin: auto;
+}
+
+@-webkit-keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+
+@keyframes progress-bar-stripes {
+  0% {
+    background-position-x: 1rem;
+  }
+}
+
+#about #polygonsContainer #polygon02 .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  margin-bottom: 5px;
+}
+
+#about #polygonsContainer #polygon02 .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e96228;
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #about #polygonsContainer #polygon02 .progress-bar {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+#about #polygonsContainer #polygon02 .progress-bar-striped {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+}
+
+#about #polygonsContainer #polygon02 .progress-bar-animated {
+  -webkit-animation: 1s linear infinite progress-bar-stripes;
+  animation: 1s linear infinite progress-bar-stripes;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #about #polygonsContainer #polygon02 .progress-bar-animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+}
+
+#projects {
+  background: url(./../assets/img/gradienta-qPC34BUgMZY-unsplash.jpg) center/cover;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+#contact {
+  background: url(./../assets/img/quinton-coetzee-_fHzsyyDcuQ-unsplash.jpg) center/cover;
+  min-height: 100vh;
   height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

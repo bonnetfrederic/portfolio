@@ -333,6 +333,13 @@ header .nav > #nav-check {
   }
 }
 
+@media screen and (max-width: 400px) {
+  #about #polygonsContainer #polygon01 {
+    min-width: 80%;
+    width: 90%;
+  }
+}
+
 #about #polygonsContainer #polygon01 #aboutMe {
   color: whitesmoke;
   font-family: "font-dancing-script", cursive;
@@ -345,6 +352,12 @@ header .nav > #nav-check {
 
 #about #polygonsContainer #polygon01 #aboutMe article p {
   padding: 0 5% 0 12%;
+}
+
+@media screen and (max-width: 400px) {
+  #about #polygonsContainer #polygon01 #aboutMe article p {
+    font-size: 1rem;
+  }
 }
 
 #about #polygonsContainer #polygon01 #aboutMe article p i {
@@ -379,6 +392,13 @@ header .nav > #nav-check {
 @media screen and (max-width: 800px) {
   #about #polygonsContainer #polygon02 {
     margin: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #about #polygonsContainer #polygon02 {
+    min-width: 80%;
+    width: 90%;
   }
 }
 
@@ -509,7 +529,9 @@ header .nav > #nav-check {
 }
 
 #projects #cardsContainer {
-  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 20px 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -518,6 +540,16 @@ header .nav > #nav-check {
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "card1 card2" "card3 card4";
   gap: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  #projects #cardsContainer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: ()[1fr];
+        grid-template-rows: repeat(1fr);
+        grid-template-areas: "card1" "card2" "card3" "card4";
+  }
 }
 
 #projects #cardsContainer .card {
@@ -598,7 +630,7 @@ header .nav > #nav-check {
 }
 
 #projects #cardsContainer #card1 #cardImgTop1 {
-  background: url(./../assets/img/gaming_campus.png) center/cover;
+  background: url(./../assets/img/gaming_campus.png) top/cover;
 }
 
 #projects #cardsContainer #card2 {
@@ -608,7 +640,7 @@ header .nav > #nav-check {
 }
 
 #projects #cardsContainer #card2 #cardImgTop2 {
-  background: url(./../assets/img/run.png) center/cover;
+  background: url(./../assets/img/run.png) top/cover;
 }
 
 #projects #cardsContainer #card3 {
@@ -618,7 +650,7 @@ header .nav > #nav-check {
 }
 
 #projects #cardsContainer #card3 #cardImgTop3 {
-  background: url(./../assets/img/montagne.png) center/cover;
+  background: url(./../assets/img/montagne.png) top/cover;
 }
 
 #projects #cardsContainer #card4 {
@@ -628,11 +660,11 @@ header .nav > #nav-check {
 }
 
 #projects #cardsContainer #card4 #cardImgTop4 {
-  background: url(./../assets/img/resto.png) center/cover;
+  background: url(./../assets/img/resto.png) top/cover;
 }
 
 #contact {
-  background: url(./../assets/img/quinton-coetzee-_fHzsyyDcuQ-unsplash.jpg) center/cover;
+  background: url(./../assets/img/quinton-coetzee-_fHzsyyDcuQ-unsplash-anonimized.jpg) right/cover;
   min-height: 100vh;
   height: 100vh;
 }

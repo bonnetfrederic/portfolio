@@ -14,7 +14,9 @@
     text-align: center;
   }
   #cardsContainer {
-    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -23,6 +25,16 @@
      "card3 card4"
      ;
     gap: 20px;
+    @media screen and (max-width: 500px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(1fr);
+      grid-template-areas: 
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      ;
+    }
     .card {
       background: $color-grey;
       width: 100%;
@@ -80,25 +92,25 @@
     #card1 {
       grid-area: card1;
       #cardImgTop1 {
-        background: url(#{$rootpath}/assets/img/gaming_campus.png) center/cover;
+        background: url(#{$rootpath}/assets/img/gaming_campus.png) top/cover;
       }
     }
     #card2 {
       grid-area: card2;
       #cardImgTop2 {
-        background: url(#{$rootpath}/assets/img/run.png) center/cover;
+        background: url(#{$rootpath}/assets/img/run.png) top/cover;
       }
     }
     #card3 {
       grid-area: card3;
       #cardImgTop3 {
-        background: url(#{$rootpath}/assets/img/montagne.png) center/cover;
+        background: url(#{$rootpath}/assets/img/montagne.png) top/cover;
       }
     }
     #card4 {
       grid-area: card4;
       #cardImgTop4 {
-        background: url(#{$rootpath}/assets/img/resto.png) center/cover;
+        background: url(#{$rootpath}/assets/img/resto.png) top/cover;
       }
     }
   }

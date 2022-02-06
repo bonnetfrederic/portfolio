@@ -32,6 +32,10 @@
       @media screen and (max-width: 800px) {
         margin: 20px;
       }
+      @media screen and (max-width: 400px) {
+        min-width: 80%;
+        width: 90%;
+      }
       #aboutMe {
         color: $color-light;
         font-family: $font1;
@@ -40,8 +44,12 @@
           padding-left: 30%;
         }
         article {
+          
           p {
             padding: 0 5% 0 12%;
+            @media screen and (max-width: 400px) {
+              font-size: 1rem;
+            }
             i {
               display: flex;
               justify-content: center;
@@ -67,6 +75,10 @@
       max-height: 800px;
       @media screen and (max-width: 800px) {
         margin: 20px;
+      }
+      @media screen and (max-width: 400px) {
+        min-width: 80%;
+        width: 90%;
       }
       #skills {
         width: 90%;

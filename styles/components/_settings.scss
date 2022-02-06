@@ -6,10 +6,11 @@ $rootpath: "./.."; // overidden by _rootpathLocal.scss locally only, because fil
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~~~~~~~~~~~~~~~
 @font-face {
-  font-family: 'font-dancing-script';
+  font-family: "font-dancing-script";
   src: url("#{$rootpath}/assets/fonts/DancingScript-VariableFont_wght.ttf");
+}
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~
-$font1: 'font-dancing-script', cursive;
+$font1: "font-dancing-script", cursive;
 
 $color-light: whitesmoke;
 $color-dark: #141819;

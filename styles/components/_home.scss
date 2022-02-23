@@ -9,9 +9,12 @@
     left: -50vw;
     animation: slidingWelcome 3s ease-out forwards;
     padding-right: 30px;
-    h1,
-    p {
+    h1 {
       font-family: $font1;
+      color: $color-light;
+    }
+    p {
+      font-family: $font2;
       color: $color-light;
     }
     h1 {

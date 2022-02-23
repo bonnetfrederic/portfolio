@@ -3,6 +3,11 @@
   src: url("./../assets/fonts/DancingScript-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -178,9 +183,13 @@ header .nav > #nav-check {
   padding-right: 30px;
 }
 
-#home #welcome h1,
-#home #welcome p {
+#home #welcome h1 {
   font-family: "font-dancing-script", cursive;
+  color: whitesmoke;
+}
+
+#home #welcome p {
+  font-family: "Montserrat", sans-serif;
   color: whitesmoke;
 }
 
@@ -281,13 +290,12 @@ header .nav > #nav-check {
 #about {
   background: url(./../assets/img/gradienta-n2XqPm7Bqhk-unsplash.jpg) center/cover;
   min-height: 100vh;
-  height: 100vh;
   position: relative;
 }
 
 @media screen and (max-width: 800px) {
   #about {
-    height: 1200px;
+    height: 1300px;
   }
 }
 
@@ -323,7 +331,7 @@ header .nav > #nav-check {
   width: 40%;
   max-width: 550px;
   min-height: 350px;
-  height: 500px;
+  height: 550px;
   max-height: 800px;
 }
 
@@ -342,15 +350,18 @@ header .nav > #nav-check {
 
 #about #polygonsContainer #polygon01 #aboutMe {
   color: whitesmoke;
-  font-family: "font-dancing-script", cursive;
 }
 
 #about #polygonsContainer #polygon01 #aboutMe h2 {
+  font-family: "font-dancing-script", cursive;
   margin: 20px 0 30px;
   padding-left: 30%;
 }
 
 #about #polygonsContainer #polygon01 #aboutMe article p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.9rem;
   padding: 0 5% 0 12%;
 }
 
@@ -385,7 +396,7 @@ header .nav > #nav-check {
   width: 40%;
   max-width: 550px;
   min-height: 350px;
-  height: 500px;
+  height: 550px;
   max-height: 800px;
 }
 
@@ -406,10 +417,10 @@ header .nav > #nav-check {
   width: 90%;
   margin: auto;
   color: whitesmoke;
-  font-family: "font-dancing-script", cursive;
 }
 
 #about #polygonsContainer #polygon02 #skills h2 {
+  font-family: "font-dancing-script", cursive;
   margin: 20px 0 30px;
   padding-left: 20%;
 }
@@ -422,16 +433,18 @@ header .nav > #nav-check {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 90%;
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
   margin: 0 auto 20px;
 }
 
 #about #polygonsContainer #polygon02 #skills h6 {
+  font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
 }
 
 #about #polygonsContainer #polygon02 .col {
-  width: 90%;
+  width: 80%;
   margin: auto;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 0%;
@@ -458,7 +471,7 @@ header .nav > #nav-check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1rem;
+  height: 7px;
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
@@ -523,6 +536,8 @@ header .nav > #nav-check {
 
 #projects #portfolioIntro {
   color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   width: 50%;
   margin: 0 auto 50px;
   text-align: center;
@@ -597,7 +612,8 @@ header .nav > #nav-check {
   border-radius: 5px;
   text-align: left;
   padding: 0 10px;
-  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
   margin-bottom: 20px;
   color: whitesmoke;
 }
@@ -664,7 +680,7 @@ header .nav > #nav-check {
 }
 
 #contact {
-  background: url(./../assets/img/quinton-coetzee-_fHzsyyDcuQ-unsplash-anonimized.jpg) right/cover;
+  background: url(./../assets/img/quinton-coetzee-_fHzsyyDcuQ-unsplash-anonimized.jpg) left/cover;
   min-height: 100vh;
   height: 100vh;
 }

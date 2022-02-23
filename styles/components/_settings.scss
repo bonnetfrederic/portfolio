@@ -9,8 +9,15 @@ $rootpath: "./.."; // overidden by _rootpathLocal.scss locally only, because fil
   font-family: "font-dancing-script";
   src: url("#{$rootpath}/assets/fonts/DancingScript-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("#{$rootpath}/assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~
 $font1: "font-dancing-script", cursive;
+$font2: "Montserrat", sans-serif;
 
 $color-light: whitesmoke;
 $color-dark: #141819;

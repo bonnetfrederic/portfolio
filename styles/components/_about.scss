@@ -2,10 +2,10 @@
   background: url(#{$rootpath}/assets/img/gradienta-n2XqPm7Bqhk-unsplash.jpg)
     center/cover;
   min-height: 100vh;
-  height: 100vh;
+  // height: 100vh;
   position: relative;
   @media screen and (max-width: 800px) {
-    height: 1200px;
+    height: 1300px;
   }
   #polygonsContainer {
     position: absolute;
@@ -27,7 +27,7 @@
       width: 40%;
       max-width: 550px;
       min-height: 350px;
-      height: 500px;
+      height: 550px;
       max-height: 800px;
       @media screen and (max-width: 800px) {
         margin: 20px;
@@ -38,14 +38,18 @@
       }
       #aboutMe {
         color: $color-light;
-        font-family: $font1;
+        // font-family: $font1;
         h2 {
+          font-family: $font1;
           margin: 20px 0 30px;
           padding-left: 30%;
         }
         article {
           
           p {
+            font-family: $font2;
+            font-weight: 100;
+            font-size: 0.9rem;
             padding: 0 5% 0 12%;
             @media screen and (max-width: 400px) {
               font-size: 1rem;
@@ -71,7 +75,7 @@
       width: 40%;
       max-width: 550px;
       min-height: 350px;
-      height: 500px;
+      height: 550px;
       max-height: 800px;
       @media screen and (max-width: 800px) {
         margin: 20px;
@@ -84,8 +88,9 @@
         width: 90%;
         margin: auto;
         color: $color-light;
-        font-family: $font1;
+        // font-family: $font1;
         h2 {
+          font-family: $font1;
           margin: 20px 0 30px;
           padding-left: 20%;
         }
@@ -93,16 +98,18 @@
           display: flex;
           justify-content: space-between;
           width: 90%;
-          font-size: 1rem;
+          font-family: $font2;
+          font-size: 0.8rem;
           margin: 0 auto 20px;
         }
         h6 {
+          font-family: $font2;
           font-size: 0.8rem;
         }
       }
       // CSS bootstrap code for progress bar
       .col {
-        width: 90%;
+        width: 80%;
         margin: auto;
         flex: 1 0 0%;
       }
@@ -121,7 +128,8 @@
       }
       .progress {
         display: flex;
-        height: 1rem;
+        // height: 1rem;
+        height: 7px;
         overflow: hidden;
         font-size: 0.75rem;
         background-color: #e9ecef;

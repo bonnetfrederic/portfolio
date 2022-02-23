@@ -1,6 +1,10 @@
 #contact {
   background: url(#{$rootpath}/assets/img/quinton-coetzee-_fHzsyyDcuQ-unsplash-anonimized.jpg)
-  right/cover;
+  left/cover;
   min-height: 100vh;
   height: 100vh;
+  // @media screen and (max-width: 460px) {
+  //   background-size: 100vh;
+  //   background-repeat: no-repeat;
+  // }
 }

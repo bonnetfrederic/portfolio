@@ -186,21 +186,15 @@ header .nav > #nav-check {
 #home #welcome h1 {
   font-family: "font-dancing-script", cursive;
   color: whitesmoke;
-}
-
-#home #welcome p {
-  font-family: "Montserrat", sans-serif;
-  color: whitesmoke;
-}
-
-#home #welcome h1 {
   font-size: 2rem;
   font-weight: 200;
   margin-bottom: 30px;
 }
 
 #home #welcome p {
-  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  font-size: 1rem;
   padding-left: 30px;
 }
 
@@ -362,6 +356,7 @@ header .nav > #nav-check {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 0.9rem;
+  line-height: 1.1rem;
   padding: 0 5% 0 12%;
 }
 
@@ -551,9 +546,9 @@ header .nav > #nav-check {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "card1 card2" "card3 card4";
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "card1 card2" "card3 card4" "card5 card6";
   gap: 20px;
 }
 
@@ -561,9 +556,9 @@ header .nav > #nav-check {
   #projects #cardsContainer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: ()[1fr];
-        grid-template-rows: repeat(1fr);
-        grid-template-areas: "card1" "card2" "card3" "card4";
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "card1" "card2" "card3" "card4" "card5";
   }
 }
 
@@ -618,7 +613,21 @@ header .nav > #nav-check {
   color: whitesmoke;
 }
 
-#projects #cardsContainer .card .card-body button {
+#projects #cardsContainer .card .card-body .linksButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects #cardsContainer .card .card-body .linksButtons button {
   width: 150px;
   height: 40px;
   background: #491d50;
@@ -634,7 +643,7 @@ header .nav > #nav-check {
   transition: 0.3s ease;
 }
 
-#projects #cardsContainer .card .card-body button:hover {
+#projects #cardsContainer .card .card-body .linksButtons button:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
@@ -679,9 +688,32 @@ header .nav > #nav-check {
   background: url(./../assets/img/resto.png) top/cover;
 }
 
+#projects #cardsContainer #card5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: card5;
+}
+
+#projects #cardsContainer #card5 #cardImgTop5 {
+  background: url(./../assets/img/hackathon1.png) top/cover;
+}
+
 #contact {
-  background: url(./../assets/img/quinton-coetzee-_fHzsyyDcuQ-unsplash-anonimized.jpg) left/cover;
-  min-height: 100vh;
-  height: 100vh;
+  background: #010519;
+  height: 150px;
+}
+
+#contact .contactContainer {
+  padding: 20px;
+}
+
+#contact .contactContainer p {
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+#contact .contactContainer .socialNetworks img {
+  height: 60px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -21,20 +21,22 @@
     padding: 20px 20px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
      "card1 card2"
      "card3 card4"
+     "card5 card6"
      ;
     gap: 20px;
     @media screen and (max-width: 500px) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(1fr);
+      grid-template-rows: repeat(5, 1fr);
       grid-template-areas: 
       "card1"
       "card2"
       "card3"
       "card4"
+      "card5"
       ;
     }
     .card {
@@ -74,20 +76,26 @@
           margin-bottom: 20px;
           color: $color-light;
         }
-        button {
-          width: 150px;
-          height: 40px;
-          background: #491d50;
-          color: $color-light;
-          border: none;
-          border-radius: 10px;
-          font-size: 1rem;
-          box-shadow: 1px 1px 5px rgba(245, 245, 245, 0.308);
-          margin: 0 0 20px 10px;
-          cursor: pointer;
-          transition: 0.3s ease;
-          &:hover {
-            transform: scale(1.03);
+        .linksButtons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          button {
+            width: 150px;
+            height: 40px;
+            background: #491d50;
+            color: $color-light;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            box-shadow: 1px 1px 5px rgba(245, 245, 245, 0.308);
+            margin: 0 0 20px 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+              transform: scale(1.03);
+            }
           }
         }
       }
@@ -114,6 +122,12 @@
       grid-area: card4;
       #cardImgTop4 {
         background: url(#{$rootpath}/assets/img/resto.png) top/cover;
+      }
+    }
+    #card5 {
+      grid-area: card5;
+      #cardImgTop5 {
+        background: url(#{$rootpath}/assets/img/hackathon1.png) top/cover;
       }
     }
   }

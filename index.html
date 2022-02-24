@@ -45,7 +45,7 @@
     <div id="welcome">
       <h1>Bonjour, je suis Fred B.</h1>
       <article>
-        <p>Je suis développeur web front-end, <br> bienvenue sur mon portfolio...</p>
+        <p>Je suis développeur web et web mobile full-stack. <br> Bienvenue sur mon portfolio...</p>
       </article>
     </div>
     <div id="scroller01" class="demo">
@@ -59,10 +59,10 @@
         <div id="aboutMe">
           <h2>&#192; propos de moi</h2>
           <article>
-            <p>Dans un souci d'apprentissage et d'amélioration continus, je m'efforce d'approfondir mes connaissances et de découvrir de nouvelles technos</p>
+            <p>Dans un souci d'apprentissage et d'amélioration continus, je m'efforce d'approfondir régulièrement mes connaissances et de découvrir de nouvelles technos.</p>
             <br>
             <p>
-              Je suis attentif aux standards du développement (workflow, SEO, refactorisation, qualité de code, debug, tests unitaires, etc.) afin de rester constamment en conformité avec les exigences requises du développement web.
+              Je suis attentif aux standards du développement (workflow, SEO, refactorisation, DRY, qualité de code, debug, tests unitaires, etc.) afin de rester constamment en conformité avec les exigences requises du développement web.
             </p>
             <br>
             <p>
@@ -164,7 +164,13 @@
 
   <section id="projects">
     <h2 id="portfolio">Portfolio</h2>
-    <p id="portfolioIntro">Vous trouverez ici un échantillon parmi les projets que j'ai réalisés.</p>
+    <p id="portfolioIntro">
+      Vous trouverez ici un échantillon parmi les projets que j'ai réalisés lors de ma formation. <br><br>
+      Etant toujours en cours de formation, les 4 premiers sites présenté ici sont des projets d'intégrations orientés Front-End. <br><br>
+      Le 5ème site est le résultat d'un projet type 'Hakathon' réalisé sur 4 jours, en collaboration avec 2 designers et une développeuse.
+    </p>
+    <br>
+    
     <div id="cardsContainer">
 
       <div class="card" id="card1">
@@ -173,7 +179,10 @@
           <h5 class="card-title">Gaming campus</h5>
           <p class="card-text">Imaginé par des professionnels du jeu vidéo et de l’éducation, Gaming Campus est un lieu unique pour révéler les talents et développer les compétences.
           </p>
-          <a href="https://github.com/bonnetfrederic/gaming-campus" target="_blank"><button>Code source</button></a>
+          <div class="linksButtons">
+            <a href="https://github.com/bonnetfrederic/gaming-campus" target="_blank"><button>Code source</button></a>
+            <a href="https://bonnetfrederic.github.io/gaming-campus" target="_blank"><button>Site web</button></a>
+          </div>
         </div>
       </div>
 
@@ -183,7 +192,10 @@
           <h5 class="card-title">Run</h5>
           <p class="card-text">Run vous propose des stories et des évènements sur le thème du running. Enfilez vos baskets et joignez-vous à nous pour de nouvelles aventures...
           </p>
-          <a href="https://github.com/bonnetfrederic/run" target="_blank"><button>Code source</button></a>
+          <div class="linksButtons">
+            <a href="https://github.com/bonnetfrederic/run" target="_blank"><button>Code source</button></a>
+            <a href="https://bonnetfrederic.github.io/run" target="_blank"><button>Site web</button></a>
+          </div>
         </div>
       </div>
 
@@ -193,7 +205,10 @@
           <h5 class="card-title">La montagne</h5>
           <p class="card-text">Vous avez envie d'air pur, de sensations de liberté et d'aventures. Alors n'attendez plus, rejoignez notre communauté de trekkers...
           </p>
-          <a href="https://github.com/bonnetfrederic/lamontagne" target="_blank"><button>Code source</button></a>
+          <div class="linksButtons">
+            <a href="https://github.com/bonnetfrederic/lamontagne" target="_blank"><button>Code source</button></a>
+            <a href="https://bonnetfrederic.github.io/lamontagne" target="_blank"><button>Site web</button></a>
+          </div>
         </div>
       </div>
 
@@ -203,7 +218,23 @@
           <h5 class="card-title">Resto</h5>
           <p class="card-text">Gastronomes, fines bouches, gourmands ou juste curieux, venez découvrir notre cuisine aux saveurs surprenantes, dans un cadre chaleureux.
           </p>
-          <a href="https://github.com/bonnetfrederic/resto" target="_blank"><button>Code source</button></a>
+          <div class="linksButtons">
+            <a href="https://github.com/bonnetfrederic/resto" target="_blank"><button>Code source</button></a>
+            <a href="https://bonnetfrederic.github.io/resto" target="_blank"><button>Site web</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card5">
+        <img class="card-img-top" id="cardImgTop5">
+        <div class="card-body">
+          <h5 class="card-title">Hackathon</h5>
+          <p class="card-text">Ce hackathon de 4 jours a été réalisé en collaboration avec 2 designers et une développeuse web. Le projet rendu, bien qu'encore perfectible, a volontairement été publié en l'état afin d'évaluer le travail fourni par toute l'équipe durant ces 4 jours, le sujet ayant été révélé en début de matinée du premier jour.
+          </p>
+          <div class="linksButtons">
+            <a href="https://github.com/bonnetfrederic/hackathon-1" target="_blank"><button>Code source</button></a>
+            <a href="https://bonnetfrederic.github.io/hackathon-1" target="_blank"><button>Site web</button></a>
+          </div>
         </div>
       </div>
 
@@ -211,7 +242,17 @@
   </section>
   
   <section id="contact">
-
+    <div class="contactContainer">
+      <p>Pour me contacter, rien de plus simple: vous me trouverez sur les réseaus suivants:</p>
+      <div class="socialNetworks">
+        <a href="https://www.linkedin.com/in/fredbonnet33/" target="_blank"> <img src="./assets/icons/brand_linkedin.svg" alt="logo LinkedIn"></a>
+        <a href="https://github.com/bonnetfrederic/" target="_blank"> <img src="./assets/icons/brand_github.svg" alt="logo Github"></a>
+      </div>
+    </div>
+    <div class="cvDownload">
+      <p>Mon CV est disponible ici:</p>
+      <a href="#"><button>mon CV</button></a>
+    </div>
   </section>
 
   <!-- JS local -->

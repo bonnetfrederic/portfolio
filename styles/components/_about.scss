@@ -7,6 +7,9 @@
   @media screen and (max-width: 800px) {
     height: 1300px;
   }
+  @media screen and (max-width: 300px) {
+    height: 600px;
+  }
   #polygonsContainer {
     position: absolute;
     top: 18%;
@@ -36,6 +39,9 @@
         min-width: 80%;
         width: 90%;
       }
+      @media screen and (max-width: 300px) {
+        display: none;
+      }
       #aboutMe {
         color: $color-light;
         h2 {
@@ -51,7 +57,10 @@
             line-height: 1.1rem;
             padding: 0 5% 0 12%;
             @media screen and (max-width: 400px) {
-              font-size: 1rem;
+              font-size: 0.8rem;
+            }
+            @media screen and (max-width: 350px) {
+              font-size: 0.6rem;
             }
             i {
               display: flex;

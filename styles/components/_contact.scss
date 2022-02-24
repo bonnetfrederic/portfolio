@@ -1,24 +1,57 @@
 #contact {
-  // background: url(#{$rootpath}/assets/img/quinton-coetzee-_fHzsyyDcuQ-unsplash-anonimized.jpg)
-  // left/cover;
   background: #010519;
-  // min-height: 100vh;
-  height: 150px;
-  // @media screen and (max-width: 460px) {
-  //   background-size: 100vh;
-  //   background-repeat: no-repeat;
-  // }
+  min-height: 150px;
+  font-family: $font2;
+  color: $color-light;
+  
   .contactContainer {
-    // width: 90%;
     padding: 20px;
-    p {
-      color: $color-light;
-      font-family: $font2;
-      font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    .socialNetworksContainer {
+      p {
+        font-size: 0.8rem;
+        text-align: center;
+      }
+      .socialNetworks {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        a {
+          transition: 0.3s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+          img {
+            height: 60px;
+          }
+        }
+      }
     }
-    .socialNetworks {
-      img {
-        height: 60px;
+    .cvDownload {
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      button {
+        width: 150px;
+        height: 40px;
+        background: #491d50;
+        color: $color-light;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        box-shadow: 1px 1px 5px rgba(245, 245, 245, 0.308);
+        margin: 0 0 20px 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        &:hover {
+          transform: scale(1.03);
+        }
       }
     }
   }

@@ -293,6 +293,12 @@ header .nav > #nav-check {
   }
 }
 
+@media screen and (max-width: 300px) {
+  #about {
+    height: 600px;
+  }
+}
+
 #about #polygonsContainer {
   position: absolute;
   top: 18%;
@@ -342,6 +348,12 @@ header .nav > #nav-check {
   }
 }
 
+@media screen and (max-width: 300px) {
+  #about #polygonsContainer #polygon01 {
+    display: none;
+  }
+}
+
 #about #polygonsContainer #polygon01 #aboutMe {
   color: whitesmoke;
 }
@@ -362,7 +374,13 @@ header .nav > #nav-check {
 
 @media screen and (max-width: 400px) {
   #about #polygonsContainer #polygon01 #aboutMe article p {
-    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #about #polygonsContainer #polygon01 #aboutMe article p {
+    font-size: 0.6rem;
   }
 }
 
@@ -700,20 +718,82 @@ header .nav > #nav-check {
 
 #contact {
   background: #010519;
-  height: 150px;
+  min-height: 150px;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
 }
 
 #contact .contactContainer {
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#contact .contactContainer p {
-  color: whitesmoke;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+#contact .contactContainer .socialNetworksContainer p {
+  font-size: 0.8rem;
+  text-align: center;
 }
 
-#contact .contactContainer .socialNetworks img {
+#contact .contactContainer .socialNetworksContainer .socialNetworks {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contactContainer .socialNetworksContainer .socialNetworks a {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#contact .contactContainer .socialNetworksContainer .socialNetworks a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#contact .contactContainer .socialNetworksContainer .socialNetworks a img {
   height: 60px;
+}
+
+#contact .contactContainer .cvDownload p {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .contactContainer .cvDownload button {
+  width: 150px;
+  height: 40px;
+  background: #491d50;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  -webkit-box-shadow: 1px 1px 5px rgba(245, 245, 245, 0.308);
+          box-shadow: 1px 1px 5px rgba(245, 245, 245, 0.308);
+  margin: 0 0 20px 10px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#contact .contactContainer .cvDownload button:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 /*# sourceMappingURL=style.css.map */
